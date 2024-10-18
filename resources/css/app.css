@@ -1,0 +1,39 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.task {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+}
+
+.actions a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.actions a:hover {
+    text-decoration: underline;
+}
