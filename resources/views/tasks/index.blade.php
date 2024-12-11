@@ -1,14 +1,10 @@
 @extends('layouts.app')
+
 @section('title', 'Список задач')
 
 @section('content')
-<h2>Список задач</h2>
-
-    <ul>
-        @foreach ($tasks as $task)  <!-- Перебор статических данных -->
-            <li>
-                <a href="{{ route('tasks.show', $task['id']) }}">{{ $task['title'] }}</a>
-            </li>
-        @endforeach
-    </ul>
+    <h1>Список задач</h1>
+    @foreach ($tasks as $task)
+        <p>{{ $task['title'] }} — {{ $task['description'] }}</p>
+    @endforeach
 @endsection

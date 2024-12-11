@@ -1,17 +1,15 @@
 @extends('layouts.app')
 
-@section('title', 'Задача ' . $task['title'])
+@section('title', 'Просмотр задачи')
 
 @section('content')
-    <h2>{{ $task['title'] }}</h2>
-
-    <x-task 
-        title="{{ $task['title'] }}" 
-        description="{{ $task['description'] ?? 'Нет описания' }}" 
-        createdAt="{{ $task['created_at'] ?? 'Не указана' }}" 
-        updatedAt="{{ $task['updated_at'] ?? 'Не указана' }}" 
-        status="{{ $task['status'] ?? 'Не выполнена' }}" 
-        priority="{{ $task['priority'] ?? 'Низкий' }}" 
-        assignee="{{ $task['assignee'] ?? 'Не назначен' }}" 
+    <x-task
+        title="{{ $task['title'] }}"
+        description="{{ $task['description'] }}"
+        createdAt="{{ $task['created_at'] }}"
+        updatedAt="{{ $task['updated_at'] }}"
+        status="{{ $task['status'] }}"
+        priority="{{ $task['priority'] }}"
+        assignee="{{ $task['assignee'] }}"
     />
 @endsection

@@ -1,8 +1,8 @@
-@extends('layouts.app')  
+@extends('layouts.app')
 
-@section('title', 'О нас')  
+@section('title', 'О нас')
 
-@section('content')  
-    <h2>О нас</h2>
-    <p>Hello, world!</p>
+@section('content')
+    <h1>О нас</h1>
+    <p>Это приложение помогает вам управлять вашими задачами.</p>
 @endsection
